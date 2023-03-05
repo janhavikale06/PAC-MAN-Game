@@ -3,7 +3,7 @@
 #include "LCD5110_Graph.h"
 #include <avr/pgmspace.h>
 
-// #define RST 12    // RESETghtyj
+// #define RST 12    // RESET
 // #define CE  13    // CS
 // #define DC  11    // Data/Command
 // #define DIN  10   // MOSI
@@ -45,6 +45,7 @@ const uint8_t pacman3[] PROGMEM={
 const uint8_t pill[] PROGMEM={
 0x0E, 0x1F, 0x1F, 0x1F, 0x0E,
 };
+
 #define Width  84
 #define Hight  48
 #define Range  12
@@ -84,7 +85,6 @@ void setup()
 
 void loop()
 {
-  //int pacy=random(0, 42);
   uint8_t* bm;
 
   for (int i=-20; i<84; i++)
